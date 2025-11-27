@@ -444,7 +444,7 @@ html[data-theme="dark"] .site-header,
 }
 
 .section-muted {
-  background: var(--bg-subtle);
+  background: transparent;
 }
 
 .narrow {
