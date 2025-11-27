@@ -754,3 +754,19 @@ html[data-theme="dark"] .site-footer {
 .about-main h2.section-title {
   margin-bottom: 14px;
 }
+
+/* Більше простору в секціях (Apps from the lab) */
+.section-header {
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  margin: 0 0 10px;
+}
+
+.section-header p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
