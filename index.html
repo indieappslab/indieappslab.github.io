@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indie Apps Lab – Simple, focused mobile apps</title>
+  <meta name="description" content="Indie Apps Lab creates small, focused mobile apps that solve real-life problems – starting with a precise sound level meter." />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark">●</span>
+        <span class="brand-text">Indie Apps Lab</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon">🌗</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Small apps. Real impact.</h1>
+          <p>
+            Indie Apps Lab builds focused mobile tools that are fast, clean and respectful to your privacy – starting with our precise sound level meter.
+          </p>
+          <div class="hero-actions">
+            <a href="apps/noise/index.html" class="btn primary">Open Sound Meter</a>
+            <!-- TODO: replace with real Play link -->
+            <a href="#" class="btn ghost" aria-disabled="true">Google Play link – coming soon</a>
+          </div>
+          <p class="hero-note">
+            Theme adapts to your system settings. You can always switch manually using the theme icon in the top-right corner.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="app-preview">
+            <div class="app-device">
+              <div class="app-screen">
+                <div class="noise-reading">42 dB</div>
+                <div class="noise-label">Quiet room</div>
+                <div class="noise-bar">
+                  <span class="noise-bar-inner"></span>
+                </div>
+                <div class="noise-scale">
+                  <span>20</span><span>40</span><span>60</span><span>80</span><span>100+</span>
+                </div>
+              </div>
+            </div>
+            <p class="app-preview-caption">
+              Visual concept of the <strong>Sound Meter</strong> app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps -->
+    <section id="apps" class="section">
+      <div class="container">
+        <h2>Our apps</h2>
+        <div class="apps-grid">
+          <article class="app-card">
+            <h3>Sound Meter (Noise Level)</h3>
+            <p>
+              Measure sound levels around you in decibels (dB). Clean interface, real-time graph, session history and export – right on your phone.
+            </p>
+            <ul class="app-features">
+              <li>Real-time dB readings</li>
+              <li>History and session details</li>
+              <li>Export measurements</li>
+              <li>No account required</li>
+            </ul>
+            <div class="app-links">
+              <!-- TODO: Replace # with Play Store URL when published -->
+              <a href="#" class="btn small disabled" aria-disabled="true">View on Google Play (soon)</a>
+              <a href="apps/noise/privacy.html" class="text-link">Privacy Policy</a>
+              <span class="dot-separator">•</span>
+              <a href="apps/noise/support.html" class="text-link">Support</a>
+            </div>
+          </article>
+
+          <article class="app-card app-card-placeholder">
+            <h3>Next app coming soon</h3>
+            <p>
+              We’re experimenting with new tools – brightness meter, focus helpers, simple mental health utilities and more.
+            </p>
+            <p class="muted">
+              This slot is reserved for the next app in the lab.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section subtle">
+      <div class="container narrow">
+        <h2>About Indie Apps Lab</h2>
+        <p>
+          Indie Apps Lab is a small one-person studio focused on building
+          useful, respectful mobile tools. No dark patterns, no noisy UI – just
+          clear functionality that helps you measure, understand and improve
+          your environment.
+        </p>
+        <p>
+          This site is the central place for our apps, privacy policies and
+          support. As new apps appear, they will be listed here.
+        </p>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section id="support" class="section">
+      <div class="container narrow">
+        <h2>Support & contact</h2>
+        <p>
+          If you have found a bug, have a feature request, or want to ask a
+          question about any of our apps, feel free to reach out:
+        </p>
+        <ul class="contact-list">
+          <li>
+            Email:
+            <a href="mailto:indieappslab+support@gmail.com">indieappslab+support@gmail.com</a>
+          </li>
+        </ul>
+        <p class="muted">
+          Please include app name, device model and Android version if you are
+          reporting a technical issue.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Indie Apps Lab</span>
+      <span class="footer-links">
+        <a href="#about">About</a>
+        <a href="apps/noise/privacy.html">Privacy</a>
+        <a href="apps/noise/support.html">Support</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
