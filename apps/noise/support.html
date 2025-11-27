@@ -2,24 +2,27 @@
 <html lang="en" data-theme="auto">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sound Meter – Support</title>
-  <meta name="description" content="Support and contact information for the Sound Meter app by Indie Apps Lab." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support – Indie Apps Lab</title>
+  <meta
+    name="description"
+    content="Support and contact information for all Indie Apps Lab apps, including Sound Meter and future tools."
+  />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
   <script defer src="../../assets/js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <span class="brand-mark">●</span>
-        <a href="../../index.html" class="brand-text" style="text-decoration:none; color:inherit;">Indie Apps Lab</a>
-      </div>
+      <a href="../../index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Indie Apps Lab</span>
+      </a>
       <nav class="nav">
         <a href="../../index.html#apps">Apps</a>
         <a href="../../index.html#about">About</a>
         <a href="../../index.html#support">Support</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
           <span class="theme-toggle-icon">🌗</span>
         </button>
       </nav>
@@ -29,39 +32,67 @@
   <main>
     <section class="section">
       <div class="container narrow">
-        <h1>Sound Meter – Support</h1>
+        <div class="section-header">
+          <h1>Support · Indie Apps Lab</h1>
+          <p>
+            This page covers support for all current and future apps from
+            <strong>Indie Apps Lab</strong> – including <em>Sound Meter</em> and
+            other tools that will appear over time.
+          </p>
+        </div>
+
+        <h2>How to contact us</h2>
         <p>
-          If you have any questions, bug reports or feature requests regarding
-          the <strong>Sound Meter</strong> app, you can contact us directly.
+          The best way to reach us is by email. Every message is read, and we
+          respond when there is something we can clarify, fix or improve.
         </p>
 
-        <h2>Contact</h2>
-        <p>
-          Email:
-          <a href="mailto:indieappslab+support@gmail.com">indieappslab+support@gmail.com</a>
-        </p>
+        <ul class="contact-list">
+          <li>
+            Email:
+            <a href="mailto:indieappslab+support@gmail.com">
+              indieappslab+support@gmail.com
+            </a>
+          </li>
+        </ul>
+
         <p class="muted">
-          Please mention that your request is about <strong>Sound Meter</strong>
-          and include:
+          To help us understand your request quickly, please include:
         </p>
-        <ul class="app-features">
-          <li>Your device model</li>
-          <li>Your Android version</li>
-          <li>App version (from the app settings screen, if available)</li>
-          <li>Short description of the issue or suggestion</li>
+        <ul class="app-feature-list">
+          <li>Name of the app (for example: “Sound Meter”)</li>
+          <li>Your device model and Android version</li>
+          <li>App version (from the app settings, if available)</li>
+          <li>
+            A short description of the issue, or what you expected vs.
+            what actually happened
+          </li>
+          <li>
+            Optional: screenshots or a short screen recording if the behaviour
+            is hard to describe in words
+          </li>
         </ul>
 
-        <h2>Common notes</h2>
-        <ul class="app-features">
+        <h2>Notes for measurement tools (like Sound Meter)</h2>
+        <p class="app-summary">
+          Some Indie Apps Lab tools measure aspects of your environment, such as
+          sound level. For these apps, please keep in mind:
+        </p>
+        <ul class="app-feature-list">
           <li>
-            Sound measurements may differ between devices due to microphone
-            hardware and system processing.
+            Readings may differ between devices because microphones and sensors
+            are different and often tuned by the manufacturer.
           </li>
           <li>
-            The app is designed for indicative / educational purposes and not
-            for professional, certified noise measurements.
+            These apps are designed for indicative and educational use, not as
+            certified professional measurement instruments.
           </li>
         </ul>
+
+        <p class="muted">
+          If you rely on measurements for safety, regulation or professional
+          work, please use certified equipment alongside our apps.
+        </p>
       </div>
     </section>
   </main>
@@ -71,7 +102,7 @@
       <span>© <span id="year"></span> Indie Apps Lab</span>
       <span class="footer-links">
         <a href="../../index.html#about">About</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="../noise/privacy.html">Privacy</a>
         <a href="support.html">Support</a>
       </span>
     </div>
