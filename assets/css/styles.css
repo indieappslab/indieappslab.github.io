@@ -518,7 +518,6 @@ html[data-theme="dark"] .site-header,
   margin: 0;
   padding-left: 18px;
   font-size: 13px;
-  color: var(--text-muted);
 }
 
 .app-meta-block {
