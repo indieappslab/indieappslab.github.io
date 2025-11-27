@@ -731,3 +731,61 @@ html[data-theme="dark"] .site-footer,
     gap: 6px;
   }
 }
+
+/* ------------------------------------
+   Dark theme refinements (top & bottom)
+   ------------------------------------ */
+
+/* Фон сторінки в темній темі — більш спокійні градієнти */
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.3), transparent 55%),
+    #020617;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] body {
+    background:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.3), transparent 55%),
+      #020617;
+  }
+}
+
+/* Хедер в темній темі — рівномірний, без дивних переливів зверху */
+html[data-theme="dark"] .site-header {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.96),
+    rgba(15, 23, 42, 0.9),
+    transparent
+  );
+  border-bottom-color: rgba(30, 64, 175, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] .site-header {
+    background: linear-gradient(
+      to bottom,
+      rgba(15, 23, 42, 0.96),
+      rgba(15, 23, 42, 0.9),
+      transparent
+    );
+    border-bottom-color: rgba(30, 64, 175, 0.5);
+  }
+}
+
+/* Футер в темній темі — суцільна темна смуга без “сірого” шуму */
+html[data-theme="dark"] .site-footer {
+  background: #020617;
+  border-top-color: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] .site-footer {
+    background: #020617;
+    border-top-color: #111827;
+  }
+}
+
