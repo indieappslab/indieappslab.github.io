@@ -2,24 +2,27 @@
 <html lang="en" data-theme="auto">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sound Meter – Indie Apps Lab</title>
-  <meta name="description" content="Sound Meter by Indie Apps Lab – a precise sound level meter with history and export. Measure decibels (dB) with a clean, focused interface." />
+  <meta
+    name="description"
+    content="Sound Meter by Indie Apps Lab – a focused sound level meter with real-time dB readings, simple history and export."
+  />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
   <script defer src="../../assets/js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <span class="brand-mark">●</span>
-        <a href="../../index.html" class="brand-text" style="text-decoration:none; color:inherit;">Indie Apps Lab</a>
-      </div>
+      <a href="../../index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Indie Apps Lab</span>
+      </a>
       <nav class="nav">
         <a href="../../index.html#apps">Apps</a>
         <a href="../../index.html#about">About</a>
         <a href="../../index.html#support">Support</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
           <span class="theme-toggle-icon">🌗</span>
         </button>
       </nav>
@@ -29,22 +32,32 @@
   <main>
     <section class="section">
       <div class="container narrow">
-        <h1>Sound Meter (Noise Level)</h1>
-        <p>
-          Sound Meter helps you quickly understand how loud your environment is.
-          It shows real-time decibel (dB) readings, a noise chart and lets you
-          keep a history of your measurements.
+        <div class="section-header">
+          <h1>Sound Meter · Noise Level</h1>
+          <p>
+            Sound Meter helps you quickly understand how loud your environment is
+            by showing sound levels in decibels (dB) with a calm, readable UI.
+          </p>
+        </div>
+
+        <p class="app-summary">
+          The app focuses on a single job: give you a clear feeling of “how loud
+          it is right now”, plus simple history when you need to compare sessions
+          or export data for later.
         </p>
-        <ul class="app-features">
-          <li>Live sound level in dB</li>
-          <li>Session history and details</li>
-          <li>Export to file</li>
-          <li>No account or sign-in required</li>
+
+        <ul class="app-feature-list" style="margin-top:10px;">
+          <li>Real-time sound level in dB</li>
+          <li>Session history and basic statistics</li>
+          <li>Export measurements to a file</li>
+          <li>No account, no registration, works offline</li>
         </ul>
 
-        <div class="app-links" style="margin-top:10px;">
-          <!-- TODO: Replace # with Google Play link when published -->
-          <a href="#" class="btn primary small disabled" aria-disabled="true">View on Google Play (soon)</a>
+        <div class="app-links" style="margin-top:14px;">
+          <!-- TODO: replace # with Play Store URL when published -->
+          <button class="btn primary small disabled" type="button" aria-disabled="true">
+            View on Google Play · coming soon
+          </button>
           <a href="privacy.html" class="text-link">Privacy Policy</a>
           <span class="dot-separator">•</span>
           <a href="support.html" class="text-link">Support</a>
@@ -54,14 +67,4 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Indie Apps Lab</span>
-      <span class="footer-links">
-        <a href="../../index.html#about">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
-      </span>
-    </div>
-  </footer>
-</body>
-</html>
+    <div class="container footer-inner"
