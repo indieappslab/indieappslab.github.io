@@ -554,7 +554,7 @@ html[data-theme="dark"] .site-header,
 }
 
 .muted {
-  color: var(--text-muted);
+  color: var(--text-soft); 
   font-size: 13px;
 }
 
