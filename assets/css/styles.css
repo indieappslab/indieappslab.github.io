@@ -553,7 +553,7 @@ html[data-theme="dark"] .site-header,
 }
 
 .muted {
-  color: var(--text-soft); 
+  color: var(--text-soft);
   font-size: 13px;
 }
 
