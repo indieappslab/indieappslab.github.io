@@ -734,3 +734,23 @@ html[data-theme="dark"] .site-footer {
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+
+/* Більш комфортний інтерліньяж в секції About */
+.about-main p {
+  line-height: 1.7;
+  margin-bottom: 0.7em;
+}
+
+.about-card ul {
+  padding-left: 18px;
+  margin: 8px 0 0;
+}
+
+.about-card li {
+  line-height: 1.6;
+  margin-bottom: 0.35em;
+}
+
+.about-main h2.section-title {
+  margin-bottom: 14px;
+}
