@@ -1,115 +1,340 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy – Luma Lux</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; }
-    header, main, footer { max-width: 860px; margin: 0 auto; padding: 18px 16px; }
-    nav { display: flex; gap: 12px; flex-wrap: wrap; font-size: 14px; opacity: .9; }
-    nav a { text-decoration: none; }
-    h1 { margin: 14px 0 6px; font-size: 28px; }
-    h2 { margin: 18px 0 6px; font-size: 18px; }
-    p, li { font-size: 16px; }
-    .muted { opacity: .8; }
-    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 12px; padding: 14px 14px; margin: 14px 0; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.95em; }
-    footer { font-size: 14px; opacity: .85; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luma Lux – Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy Policy for the Luma Lux light meter app by Indie Apps Lab. No account, no server-side collection of your measurements; light sensor readings are processed on-device. Firebase is used for crash reporting/diagnostics to improve stability."
+  />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <script defer src="../../assets/js/main.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="https://indieappslab.github.io/">Indie Apps Lab</a>
-      <a href="https://indieappslab.github.io/#apps">Apps</a>
-      <a href="https://indieappslab.github.io/#about">About</a>
-      <a href="https://indieappslab.github.io/#support">Support</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Indie Apps Lab</span>
+      </a>
+      <nav class="nav">
+        <a href="../../index.html#apps">Apps</a>
+        <a href="../../index.html#about">About</a>
+        <a href="/support/">Support</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon">🌗</span>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Privacy Policy – Luma Lux</h1>
-    <p class="muted">Last updated: 2026-01-10</p>
+    <section class="section">
+      <div class="container narrow">
+        <h1>Privacy Policy – Luma Lux</h1>
+        <p class="muted">
+          Last updated: <strong>2026-01-10</strong>
+        </p>
 
-    <p>
-      This Privacy Policy explains how the Luma Lux app by Indie Apps Lab handles your data.
-    </p>
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy explains how the <strong>Luma Lux</strong> mobile application
+          (“<strong>Luma Lux</strong>”, “<strong>the App</strong>”) developed by
+          <strong>Indie Apps Lab</strong> (“<strong>we</strong>”, “<strong>us</strong>”,
+          “<strong>our</strong>”) handles your information.
+        </p>
+        <p>
+          Luma Lux is a light meter. It uses your device’s ambient light sensor to measure
+          illumination in lux (lx) and shows the result on screen. The App is designed
+          to be as privacy-friendly as possible and to minimise the data we process.
+        </p>
+        <p>
+          This Privacy Policy applies to the Luma Lux mobile application and describes how it
+          handles data on your device.
+        </p>
 
-    <h2>1. Data we collect</h2>
-    <div class="card">
-      <p>
-        The app measures ambient light levels using your device’s built-in light sensor. Light readings are processed
-        directly on your device.
-      </p>
-      <ul>
-        <li><strong>Light sensor data</strong> is used only to show real-time illumination (lux) and charts inside the app.</li>
-        <li><strong>No personal data</strong> is intentionally collected, stored, or transmitted to our own servers.</li>
-        <li>If the app includes <strong>measurement history</strong>, it is stored <strong>locally on your device</strong> and is not automatically uploaded.</li>
-        <li>If you use an <strong>export/share</strong> feature, the file is created on your device and shared only when you explicitly choose to share it.</li>
-      </ul>
-    </div>
+        <h2>2. Key Points at a Glance</h2>
+        <p>
+          This short summary explains Luma Lux’s overall approach to privacy and data:
+        </p>
+        <ul class="app-feature-list">
+          <li><strong>No accounts or sign-in.</strong> You can use the App without creating an account.</li>
+          <li><strong>No server collection of your measurements.</strong> We do not send your light measurements or measurement history to our servers.</li>
+          <li><strong>On-device processing.</strong> Light sensor readings are processed on your device to calculate and display lux values.</li>
+          <li><strong>No ads.</strong> The App does not include advertising networks.</li>
+          <li>
+            <strong>Limited diagnostics via Firebase.</strong> The App uses Firebase to help us understand crashes and improve stability.
+            This may involve collecting technical diagnostic data (see section 7).
+          </li>
+          <li><strong>Data leaves your device only if you share it.</strong> Measurement data (for example CSV/JSON exports) leaves your device only when you actively export or share it through other apps or services.</li>
+        </ul>
 
-    <h2>2. Permissions</h2>
-    <div class="card">
-      <p>
-        Luma Lux uses the device’s ambient light sensor. On most Android devices this sensor does not require a
-        runtime permission prompt. If a future version adds optional features that require additional permissions,
-        we will request them clearly and update this policy.
-      </p>
-    </div>
+        <h2>3. Data Processed by Luma Lux</h2>
+        <p>
+          Luma Lux is designed to work primarily with data that never leaves your device.
+          Below is an overview of what the App uses and how.
+        </p>
 
-    <h2>3. Third-party services</h2>
-    <div class="card">
-      <p>
-        The current version of Luma Lux integrates with <strong>Firebase</strong> to help us improve app stability and fix bugs.
-        Depending on the Firebase components enabled in the build (for example, Crashlytics / Analytics), Firebase may collect
-        <strong>diagnostic and usage information</strong> such as device/app identifiers and technical details about crashes and app performance.
-      </p>
-      <ul>
-        <li>We use Firebase to receive <strong>crash reports</strong> and related diagnostics so we can identify and fix issues faster.</li>
-        <li>These reports are intended to contain <strong>technical information</strong> (e.g., app version, device model, OS version, crash stack trace).</li>
-        <li><strong>Your light measurements</strong> (lux values, charts, history) are not intended to be included in Firebase reports.</li>
-      </ul>
-      <p class="muted">
-        Note: Firebase is a Google service and has its own privacy documentation and data handling practices.
-      </p>
-    </div>
+        <h3>3.1 Light Sensor Data (Ambient Light / Lux)</h3>
+        <ul class="app-feature-list">
+          <li>
+            The App uses the device’s ambient light sensor to access live illumination readings and
+            calculate/display the current value in lux (lx).
+          </li>
+          <li>
+            Sensor readings are processed <strong>only on your device</strong> to show real-time values and charts.
+          </li>
+          <li>
+            The App does <strong>not</strong> transmit your raw light readings to our servers.
+          </li>
+        </ul>
 
-    <h2>4. Data sharing</h2>
-    <div class="card">
-      <p>
-        We do not sell, trade, or share your personal data with third parties.
-        The app does not send your light measurement data to our servers. Limited diagnostic data may be processed by Firebase
-        as described above to support app reliability.
-      </p>
-    </div>
+        <h3>3.2 Measurement History (Local Storage)</h3>
+        <ul class="app-feature-list">
+          <li>
+            Luma Lux may store a history of your measurement sessions (for example:
+            average, minimum and maximum lux during a session, timestamps and optional
+            names/labels you assign to sessions).
+          </li>
+          <li>
+            This information is stored locally on your device in the App’s private storage
+            and is not automatically uploaded to our servers.
+          </li>
+          <li>
+            We do not have access to this local history and cannot retrieve it from your device.
+          </li>
+        </ul>
 
-    <h2>5. Your choices</h2>
-    <div class="card">
-      <ul>
-        <li>You can clear app data in your Android system settings to remove locally stored measurement history (if any).</li>
-        <li>You can uninstall the app at any time.</li>
-      </ul>
-    </div>
+        <h3>3.3 App Settings and Configuration</h3>
+        <ul class="app-feature-list">
+          <li>
+            The App stores certain preferences (for example: theme, language, calibration
+            multiplier/offset, history options, screen-on behaviour) locally on your device so that
+            the App can remember your choices between sessions.
+          </li>
+          <li>
+            These settings are stored in the App’s private storage and are not sent to us.
+          </li>
+        </ul>
 
-    <h2>6. Contact</h2>
-    <div class="card">
-      <p>
-        If you have questions about this Privacy Policy or the app, you can contact us:
-      </p>
-      <p>Email: <strong>indieappslab+support@gmail.com</strong></p>
-    </div>
+        <h3>3.4 Personal Data</h3>
+        <p>
+          Luma Lux does <strong>not</strong> require you to create an account, sign in, or provide
+          your name, email address or other personal details in order to use the App.
+        </p>
+        <p>
+          We do not intentionally collect your light measurement data on our servers. However,
+          the App uses Firebase for diagnostics (see section 7), which may process certain
+          technical identifiers and crash/performance information.
+        </p>
 
-    <p class="muted">
-      By using Luma Lux, you agree to this Privacy Policy. If you do not agree, please uninstall the app and stop using it.
-    </p>
+        <h2>4. Exporting and Sharing the Measurements</h2>
+        <p>
+          The App includes features that let you <strong>export or share</strong> your measurement
+          history (for example, as files such as CSV or JSON, or via the system share sheet).
+        </p>
+        <ul class="app-feature-list">
+          <li>
+            When you export or share measurements, the selected data is passed to the
+            app or service you choose (for example, email, messaging, cloud storage).
+          </li>
+          <li>
+            We do <strong>not</strong> receive a copy of this exported data. It is handled
+            by the third-party apps or services you select, under their own privacy policies.
+          </li>
+          <li>
+            You can always stop exporting or sharing and can delete the exported files
+            or messages using the tools provided by those third-party services.
+          </li>
+        </ul>
+
+        <h2>5. Permissions Used by the App</h2>
+        <p>
+          To function correctly, the App may request certain permissions from your device:
+        </p>
+        <ul class="app-feature-list">
+          <li>
+            <strong>Light sensor</strong> – used to measure illumination in real time.
+            On most Android devices, access to the ambient light sensor does not require a runtime permission prompt.
+          </li>
+        </ul>
+        <p>
+          The App uses the platform’s standard storage mechanisms for saving local data
+          (app data inside the operating system sandbox) and does not request separate
+          storage permissions to access your photos, media or files.
+        </p>
+        <p>
+          You can manage permissions for Luma Lux at any time in your device’s system settings.
+        </p>
+
+        <h2>6. Local Processing and Storage</h2>
+        <ul class="app-feature-list">
+          <li>
+            All processing of sensor readings for measurement is done directly on your device.
+          </li>
+          <li>
+            Measurement history and settings are stored only in the App’s local storage
+            on your device.
+          </li>
+          <li>
+            We do not remotely store your light measurements or settings on our own servers.
+          </li>
+        </ul>
+
+        <h2>7. Third-Party Services and App Stores</h2>
+        <p>
+          The current version of Luma Lux integrates with <strong>Firebase</strong> to help us improve app stability and fix bugs.
+          Firebase may collect and process <strong>diagnostic information</strong> such as crash logs, device model, operating system version,
+          app version, and other technical data necessary for reliability and troubleshooting.
+        </p>
+        <ul class="app-feature-list">
+          <li>
+            We use Firebase primarily for <strong>crash reporting/diagnostics</strong> (for example, Firebase Crashlytics) to identify and fix issues.
+          </li>
+          <li>
+            Firebase is a third-party service operated by Google and is subject to its own privacy documentation and terms.
+          </li>
+          <li>
+            Your measurement history and light sensor readings are intended to remain on-device and are not designed to be uploaded to our servers.
+          </li>
+        </ul>
+
+        <p class="muted">
+          If a future version adds additional services (for example, ads or analytics),
+          this Privacy Policy will be updated and the change will be clearly reflected here
+          and in the app store listing. Where required by law, we will also ask for your
+          consent inside the App.
+        </p>
+        <p>
+          Please note that app stores and platform providers (such as Google Play and your
+          device manufacturer) may collect their own usage data in accordance with their
+          own privacy policies. We do not control their collection or use of such data.
+        </p>
+
+        <h2>8. Data Sharing and Legal Disclosures</h2>
+        <ul class="app-feature-list">
+          <li>We do not sell or rent your personal data.</li>
+          <li>
+            We do not share your measurement history or light sensor readings with third parties,
+            as this data is not sent to us in the first place.
+          </li>
+          <li>
+            We may disclose information only if required to do so by applicable law or
+            in response to valid legal requests (for example, a court order). In normal operation,
+            we do not hold your measurement history on our servers.
+          </li>
+        </ul>
+
+        <h2>9. Data Retention and Deletion</h2>
+        <p>
+          Because the App does not store your measurement history on our servers, there is no
+          server-side retention period for that data.
+        </p>
+        <p>On your device:</p>
+        <ul class="app-feature-list">
+          <li>
+            Measurement history and settings remain on your device until you delete them
+            or uninstall the App.
+          </li>
+          <li>
+            You can remove this data by clearing the App’s data or uninstalling Luma Lux
+            via your device settings.
+          </li>
+          <li>
+            Exported files or shares (for example, CSV/JSON you have sent by email or
+            stored in cloud services) need to be deleted using those third-party services.
+          </li>
+        </ul>
+
+        <h2>10. Children’s Privacy</h2>
+        <p>
+          Luma Lux is not specifically directed at children and does not knowingly collect
+          personal data from children under the age of 13 (or other age defined by local law).
+        </p>
+
+        <h2>11. Your Privacy Rights</h2>
+        <p>
+          Depending on your location, you may have certain rights regarding your personal data
+          under local data protection laws (for example, the GDPR in the European Union / EEA
+          or similar laws in other regions).
+        </p>
+        <p>
+          While Luma Lux is built to avoid collecting measurement data on our side, we still want
+          to be transparent about your options:
+        </p>
+        <ul class="app-feature-list">
+          <li>
+            <strong>Access / information.</strong> You can contact us if you have questions
+            about what data the App uses and how.
+          </li>
+          <li>
+            <strong>Correction / deletion.</strong> You can delete local data by clearing the
+            App’s storage or uninstalling the App from your device.
+          </li>
+          <li>
+            <strong>Control of permissions.</strong> If your device/OS provides controls related to sensors,
+            you can manage them in your device settings.
+          </li>
+        </ul>
+
+        <h2>12. International Users</h2>
+        <p>
+          The App may be used by users in different countries. Firebase (as a third-party provider)
+          may process diagnostic data on infrastructure located in different regions. For details,
+          please refer to Google/Firebase documentation.
+        </p>
+
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time, for example if we change how
+          the App works or if we add new features such as analytics or advertising.
+        </p>
+        <ul class="app-feature-list">
+          <li>
+            When we make significant changes, we will update the “Last updated” date at the top
+            of this page.
+          </li>
+          <li>
+            Where appropriate, we may also provide an in-app notice or mention changes in the
+            app store listing.
+          </li>
+        </ul>
+
+        <h2>14. Contact</h2>
+        <p>
+          For the purposes of applicable data protection laws, the data controller for Luma Lux
+          is <strong>Indie Apps Lab</strong>.
+        </p>
+        <p>
+          If you have any questions about this Privacy Policy or about how Luma Lux handles
+          your data, please contact us:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:indieappslab+support@gmail.com">
+            indieappslab+support@gmail.com
+          </a>
+        </p>
+
+        <p class="muted">
+          By installing and using Luma Lux, you acknowledge that you have read and understood
+          this Privacy Policy.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    © Indie Apps Lab · <a href="https://indieappslab.github.io/#about">About</a> · <a href="./privacy.html">Privacy</a> · <a href="https://indieappslab.github.io/#support">Support</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Indie Apps Lab</span>
+      <span class="footer-links">
+        <a href="../../index.html#about">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="/support/">Support</a>
+      </span>
+    </div>
   </footer>
 </body>
 </html>
