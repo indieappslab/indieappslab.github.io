@@ -6,7 +6,7 @@
   <title>Calm dB – Privacy Policy</title>
   <meta
     name="description"
-    content="Privacy Policy for the Calm dB sound meter app by Indie Apps Lab. No account, no server-side collection, no analytics or ads; measurements are stored locally on your device."
+    content="Privacy Policy for the Calm dB sound meter app by Indie Apps Lab. No account, no server-side collection of your measurements; microphone input is processed on-device. Google Firebase is used for crash reporting/diagnostics to improve stability."
   />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
@@ -35,7 +35,7 @@
       <div class="container narrow">
         <h1>Privacy Policy – Calm dB</h1>
         <p class="muted">
-          Last updated: <strong>2025-11-28</strong>
+          Last updated: <strong>2026-01-19</strong>
         </p>
 
         <h2>1. Introduction</h2>
@@ -61,9 +61,13 @@
         </p>
         <ul class="app-feature-list">
           <li><strong>No accounts or sign-in.</strong> You can use the App without creating an account.</li>
-          <li><strong>No server collection.</strong> We do not send your personal data or measurements to our servers.</li>
+          <li><strong>No server collection of your measurements.</strong> We do not send your sound measurements or measurement history to our servers.</li>
           <li><strong>No audio recordings.</strong> Microphone input is processed in real time only and is not recorded or stored as sound files.</li>
-          <li><strong>No analytics, tracking, or ads.</strong> The App does not use analytics SDKs, tracking technologies, or advertising networks.</li>
+          <li><strong>No ads.</strong> The App does not include advertising networks.</li>
+          <li>
+            <strong>Limited diagnostics via Google Firebase.</strong> The App uses Firebase to help us understand crashes and improve stability.
+            This may involve collecting technical diagnostic data (see section 7).
+          </li>
           <li><strong>Data leaves your device only if you share it.</strong> Measurement data (for example CSV/JSON exports) leaves your device only when you actively export or share it through other apps or services.</li>
         </ul>
 
@@ -87,6 +91,9 @@
             The App <strong>does not record, store or transmit</strong> the raw audio
             as sound files.
           </li>
+          <li>
+            The App is not designed to upload your raw audio or measurement history to our servers.
+          </li>
         </ul>
 
         <h3>3.2 Measurement History (Local Storage)</h3>
@@ -98,7 +105,7 @@
           </li>
           <li>
             This information is stored locally on your device in the App’s private storage
-            and is not automatically uploaded to our servers or to any third party.
+            and is not automatically uploaded to our servers.
           </li>
           <li>
             We do not have access to this local history and cannot retrieve it from your device.
@@ -123,8 +130,9 @@
           your name, email address or other personal details in order to use the App.
         </p>
         <p>
-          We do not collect identifiers such as device IDs, advertising IDs,
-          IP addresses, location, or other tracking data through the App.
+          We do not intentionally collect your measurement history or raw audio on our servers. However,
+          the App uses Google Firebase for diagnostics (see section 7), which may process certain
+          technical identifiers and crash/diagnostic information.
         </p>
 
         <h2>4. Exporting and Sharing the Measurements</h2>
@@ -169,25 +177,38 @@
         <h2>6. Local Processing and Storage</h2>
         <ul class="app-feature-list">
           <li>
-            All processing of audio input for measurement is done directly on your device.
+            All processing of microphone input for measurement is done directly on your device.
           </li>
           <li>
             Measurement history and settings are stored only in the App’s local storage
             on your device.
           </li>
           <li>
-            We do not operate a backend server for Calm dB and do not remotely store
-            your measurements or settings.
+            We do not remotely store your measurements or settings on our own servers.
           </li>
         </ul>
 
         <h2>7. Third-Party Services and App Stores</h2>
         <p>
-          The current version of Calm dB does <strong>not integrate</strong> with third-party
-          analytics, advertising networks or tracking SDKs.
+          The current version of Calm dB integrates with Google Firebase to help us improve app stability and fix bugs.
+          Firebase may collect and process diagnostic information such as crash logs, device model, operating system version,
+          app version, and other technical data necessary for reliability and troubleshooting.
         </p>
+        <ul class="app-feature-list">
+          <li>
+            We use Firebase primarily for crash reporting/diagnostics (for example, Firebase Crashlytics) to identify and fix issues.
+          </li>
+          <li>
+            Firebase is a third-party service operated by Google and is subject to its own privacy documentation and terms.
+          </li>
+          <li>
+            Your measurement history and microphone readings are intended to remain on-device and are not designed to be uploaded to our servers.
+            Crash reports may include limited diagnostic context (for example, app state, logs, and device information) to help reproduce and fix issues.
+          </li>
+        </ul>
+
         <p class="muted">
-          If a future version adds such services (for example, ads or anonymous analytics),
+          If a future version adds additional services (for example, ads or analytics),
           this Privacy Policy will be updated and the change will be clearly reflected here
           and in the app store listing. Where required by law, we will also ask for your
           consent inside the App.
@@ -202,20 +223,20 @@
         <ul class="app-feature-list">
           <li>We do not sell or rent your personal data.</li>
           <li>
-            We do not share your measurement history or audio data with third parties,
+            We do not share your measurement history or raw audio with third parties,
             as this data is not sent to us in the first place.
           </li>
           <li>
             We may disclose information only if required to do so by applicable law or
-            in response to valid legal requests (for example, a court order), but under
-            normal operation we do not hold personal data that could be disclosed.
+            in response to valid legal requests (for example, a court order). In normal operation,
+            we do not hold your measurement history on our servers.
           </li>
         </ul>
 
         <h2>9. Data Retention and Deletion</h2>
         <p>
-          Because the App does not store your personal data on our servers, there is no
-          server-side retention period.
+          Because the App does not store your measurement history on our servers, there is no
+          server-side retention period for that data.
         </p>
         <p>On your device:</p>
         <ul class="app-feature-list">
@@ -246,7 +267,7 @@
           or similar laws in other regions).
         </p>
         <p>
-          While Calm dB is built to avoid collecting personal data on our side, we still want
+          While Calm dB is built to avoid collecting measurement data on our side, we still want
           to be transparent about your options:
         </p>
         <ul class="app-feature-list">
@@ -266,9 +287,9 @@
 
         <h2>12. International Users</h2>
         <p>
-          The App may be used by users in different countries. Because Calm dB does not send
-          your personal data to our servers, we do not perform international transfers of your
-          personal data.
+          The App may be used by users in different countries. Firebase (as a third-party provider)
+          may process diagnostic data on infrastructure located in different regions. For details,
+          please refer to Google/Firebase documentation.
         </p>
 
         <h2>13. Changes to This Privacy Policy</h2>
