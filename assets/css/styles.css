@@ -770,3 +770,27 @@ html[data-theme="dark"] .site-footer {
   color: var(--text-soft);
   line-height: 1.65;
 }
+
+.hero-qr {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: 0.85;
+}
+
+.hero-qr img {
+  width: 104px;
+  height: 104px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 6px;
+}
+
+.hero-qr-caption {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 160px;
+  line-height: 1.4;
+}
+
