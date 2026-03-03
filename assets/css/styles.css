@@ -405,7 +405,7 @@ html:not([data-theme]) .hero-screenshot--light {
 
 .apps-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* <-- рівні колонки */
   gap: 20px;
   align-items: stretch;
 }
