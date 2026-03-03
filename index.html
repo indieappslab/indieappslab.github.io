@@ -14,368 +14,442 @@
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="" class="brand" aria-label="Indie Apps Lab home">
-        <span class="brand-mark"></span>
-        <span class="brand-text">Indie Apps Lab</span>
-      </a>
 
-      <nav class="nav">
-        <a href="#apps">Apps</a>
-        <a href="#about">About</a>
-        <a href="/support/">Support</a>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
-          <span class="theme-toggle-icon" aria-hidden="true">🌗</span>
-        </button>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+<div class="container header-inner">
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Indie Apps Lab</p>
-          <h1>Thoughtful mobile tools for everyday life.</h1>
-          <p class="hero-subtitle">
-            Indie Apps Lab builds small, focused apps that feel calm, accurate and respectful.
-            No clutter, no dark patterns – just clear tools that help you measure, breathe, focus, and build better routines.
-          </p>
+<a href="" class="brand" aria-label="Indie Apps Lab home">
+<span class="brand-mark"></span>
+<span class="brand-text">Indie Apps Lab</span>
+</a>
 
-          <div class="hero-actions">
-            <a href="#apps" class="btn primary">Explore apps</a>
-            <a
-              href="https://play.google.com/store/apps/dev?id=5162602203318406260"
-              class="btn ghost"
-              target="_blank"
-              rel="noopener"
-            >
-              View developer page
-            </a>
-          </div>
+<nav class="nav">
+<a href="#apps">Apps</a>
+<a href="#about">About</a>
+<a href="/support/">Support</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+<span class="theme-toggle-icon">🌗</span>
+</button>
+</nav>
 
-          <div class="hero-meta">
-            <div class="meta-item">
-              <span class="meta-label">Live apps</span>
-              <span class="meta-value">Luma Lux · Calm dB · Brelax</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">In closed testing</span>
-              <span class="meta-value">Pomodoro · Habivo</span>
-            </div>
-          </div>
-        </div>
+</div>
+</header>
 
-        <!-- Hero visual with real app screenshots (kept Calm dB as brand anchor) -->
-        <div class="hero-visual">
-          <div class="hero-screenshot-frame">
-            <img
-              src="assets/img/calmdb-main-dark.png"
-              alt="Calm dB main screen in dark mode"
-              class="hero-screenshot hero-screenshot--dark"
-              loading="lazy"
-            />
-            <img
-              src="assets/img/calmdb-main-light.png"
-              alt="Calm dB main screen in light mode"
-              class="hero-screenshot hero-screenshot--light"
-              loading="lazy"
-            />
-          </div>
+<main id="top">
 
-          <div class="hero-badge">
-            Indie Apps Lab · Clean tools, respectful privacy
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="hero">
+<div class="container hero-inner">
 
-    <!-- APPS -->
-    <section id="apps" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Apps from the lab</h2>
-          <p>
-            Every app starts with a simple question: <em>what problem can we solve with one clean, reliable tool?</em>
-          </p>
-        </div>
+<div class="hero-text">
 
-        <div class="apps-grid">
-          <!-- Luma Lux -->
-          <article class="app-card">
-            <div class="app-card-header">
-              <span class="app-tag app-tag--live">Available on Google Play</span>
-              <h3>Luma Lux · Light &amp; Lux Meter</h3>
-            </div>
-            <p class="app-summary">
-              Turn your phone into a clean, accurate ambient light meter. Measure illuminance in lux using the built-in light sensor —
-              great for photography, plants, and indoor lighting checks.
-            </p>
+<p class="eyebrow">Indie Apps Lab</p>
 
-            <div class="app-layout">
-              <ul class="app-feature-list">
-                <li>Real-time lux measurement</li>
-                <li>Uses your device’s light sensor</li>
-                <li>Helpful for photography &amp; exposure planning</li>
-                <li>Plant light checks and workspace lighting</li>
-              </ul>
+<h1>Thoughtful mobile tools for everyday life.</h1>
 
-              <div class="app-meta-block">
-                <p class="app-meta-title">Clarity first</p>
-                <p class="app-meta-text">
-                  Open the app, point your device, and instantly see how much light is available — no clutter, no learning curve.
-                </p>
-              </div>
-            </div>
+<p class="hero-subtitle">
+Indie Apps Lab builds small, focused apps that feel calm, accurate and respectful.
+No clutter, no dark patterns – just clear tools that help you measure, breathe, focus, and build better routines.
+</p>
 
-            <div class="app-links">
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.indieappslab.lumalux"
-                class="btn small"
-                target="_blank"
-                rel="noopener"
-              >
-                View on Google Play
-              </a>
-              <span class="dot-separator">•</span>
-              <a href="/support/" class="text-link">Support</a>
-            </div>
-          </article>
+<div class="hero-actions">
 
-          <!-- Calm dB -->
-          <article class="app-card">
-            <div class="app-card-header">
-              <span class="app-tag app-tag--live">Available on Google Play</span>
-              <h3>Calm dB · Sound Meter</h3>
-            </div>
-            <p class="app-summary">
-              A clean, accurate sound level meter for real-time noise checks in decibels (dB).
-              Clear main reading, smooth chart, and session history when you need more detail.
-            </p>
+<a href="#apps" class="btn primary">
+Explore apps
+</a>
 
-            <div class="app-layout">
-              <ul class="app-feature-list">
-                <li>Real-time sound level in dB</li>
-                <li>Smooth live chart + Min/Avg/Max</li>
-                <li>Session history stored on device</li>
-                <li>Export to CSV / JSON</li>
-              </ul>
+<a
+href="https://play.google.com/store/apps/dev?id=5162602203318406260"
+class="btn ghost"
+target="_blank"
+rel="noopener"
+>
+View developer page
+</a>
 
-              <div class="app-meta-block">
-                <p class="app-meta-title">Made for everyday checks</p>
-                <p class="app-meta-text">
-                  Designed for indicative use at home, office, or outdoors — calm UI, fast readings, and no clutter.
-                </p>
-              </div>
-            </div>
+</div>
 
-            <div class="app-links">
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.indieappslab.calmdb"
-                class="btn small"
-                target="_blank"
-                rel="noopener"
-              >
-                View on Google Play
-              </a>
-              <a href="apps/noise/privacy.html" class="text-link">Privacy Policy</a>
-              <span class="dot-separator">•</span>
-              <a href="/support/" class="text-link">Support</a>
-            </div>
-          </article>
+<div class="hero-meta">
 
-          <!-- Brelax -->
-          <article class="app-card">
-            <div class="app-card-header">
-              <span class="app-tag app-tag--live">Available on Google Play</span>
-              <h3>Brelax · Breathing Exercises</h3>
-            </div>
-            <p class="app-summary">
-              A breathing app for calm, focus, and better sleep. Guided, science-based sessions with gentle pacing —
-              designed to reduce stress and help you reset in minutes.
-            </p>
+<div class="meta-item">
+<span class="meta-label">Live apps</span>
+<span class="meta-value">Luma Lux · Calm dB · Brelax</span>
+</div>
 
-            <div class="app-layout">
-              <ul class="app-feature-list">
-                <li>Guided breathing sessions</li>
-                <li>Useful for calm, focus, and sleep</li>
-                <li>Minimal, soothing visuals</li>
-                <li>A gentle daily companion</li>
-              </ul>
+<div class="meta-item">
+<span class="meta-label">In closed testing</span>
+<span class="meta-value">Pomodoro · Habivo</span>
+</div>
 
-              <div class="app-meta-block">
-                <p class="app-meta-title">Calm you can feel</p>
-                <p class="app-meta-text">
-                  Simple sessions that are easy to start and pleasant to repeat — a quiet tool for your nervous system.
-                </p>
-              </div>
-            </div>
+</div>
 
-            <div class="app-links">
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.indieappslab.brelax"
-                class="btn small"
-                target="_blank"
-                rel="noopener"
-              >
-                View on Google Play
-              </a>
-              <span class="dot-separator">•</span>
-              <a href="/support/" class="text-link">Support</a>
-            </div>
-          </article>
+</div>
 
-          <!-- Pomodoro (Closed testing) -->
-          <article class="app-card">
-            <div class="app-card-header">
-              <span class="app-tag">Closed testing</span>
-              <h3>Pomodoro Timer · Study &amp; Focus</h3>
-            </div>
+<div class="hero-visual">
 
-            <p class="app-summary">
-              A premium, minimal Pomodoro timer for deep work. Clear sessions, gentle breaks, and simple progress —
-              built to keep you consistent without stress.
-            </p>
+<div class="hero-screenshot-frame">
 
-            <div class="app-layout">
-              <ul class="app-feature-list">
-                <li>Pomodoro sessions with breaks</li>
-                <li>Clean stats &amp; progress</li>
-                <li>Minimal themes, distraction-free UI</li>
-                <li>Feedback-driven closed testing</li>
-              </ul>
+<img
+src="assets/img/calmdb-main-dark.png"
+alt="Calm dB main screen dark"
+class="hero-screenshot hero-screenshot--dark"
+loading="lazy"
+/>
 
-              <div class="app-meta-block">
-                <p class="app-meta-title">Help shape the release</p>
-                <p class="app-meta-text">
-                  Join the closed test to try early builds and report issues or UX feedback before public launch.
-                </p>
-              </div>
-            </div>
+<img
+src="assets/img/calmdb-main-light.png"
+alt="Calm dB main screen light"
+class="hero-screenshot hero-screenshot--light"
+loading="lazy"
+/>
 
-            <div class="app-links">
-              <a
-                href="https://play.google.com/apps/testing/io.github.indieappslab.pomodoro"
-                class="btn small"
-                target="_blank"
-                rel="noopener"
-              >
-                Join closed testing
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.indieappslab.pomodoro"
-                class="text-link"
-                target="_blank"
-                rel="noopener"
-              >
-                Store listing
-              </a>
-              <span class="dot-separator">•</span>
-              <a href="/support/" class="text-link">Support</a>
-            </div>
-          </article>
+</div>
 
-          <!-- Habivo (Closed testing) -->
-          <article class="app-card">
-            <div class="app-card-header">
-              <span class="app-tag">Closed testing</span>
-              <h3>Habivo · Daily Habit Tracker</h3>
-            </div>
+<div class="hero-badge">
+Indie Apps Lab · Clean tools, respectful privacy
+</div>
 
-            <p class="app-summary">
-              Build habits and routines with a calm, premium tracker. Stay consistent with streaks, gentle reminders,
-              and readable progress — without pressure.
-            </p>
+</div>
 
-            <div class="app-layout">
-              <ul class="app-feature-list">
-                <li>Create habits &amp; track daily progress</li>
-                <li>Streaks and simple motivation loops</li>
-                <li>Readable stats that stay calm</li>
-                <li>Designed for quick daily check-ins</li>
-              </ul>
+</div>
+</section>
 
-              <div class="app-meta-block">
-                <p class="app-meta-title">Consistency made simple</p>
-                <p class="app-meta-text">
-                  Habivo is designed to feel lightweight and supportive: see what matters today, check in quickly, and move on.
-                </p>
-              </div>
-            </div>
+<section id="apps" class="section">
 
-            <div class="app-links">
-              <a
-                href="https://play.google.com/apps/testing/io.github.indieappslab.habits"
-                class="btn small"
-                target="_blank"
-                rel="noopener"
-              >
-                Join closed testing
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=io.github.indieappslab.habits"
-                class="text-link"
-                target="_blank"
-                rel="noopener"
-              >
-                Store listing
-              </a>
-              <span class="dot-separator">•</span>
-              <a href="/support/" class="text-link">Support</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+<div class="container">
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-muted">
-      <div class="container">
-        <div class="about-layout">
-          <div class="about-main">
-            <p class="eyebrow">Who is behind the apps</p>
-            <h2 class="section-title">About Indie Apps Lab</h2>
-            <p>
-              Indie Apps Lab is a one-person studio experimenting with small,
-              carefully designed tools. The goal is simple:
-              <strong>apps that feel calm, honest and useful.</strong>
-            </p>
-            <p>
-              Instead of trying to be everything at once, each app focuses on a single job:
-              measure something clearly, help you focus, or build a better routine — and then stay out of your way.
-              No feeds, no pressure, no gamified addiction loops.
-            </p>
-            <p>
-              This site is the home for all releases from the lab: app overviews,
-              privacy policies and a direct contact channel when you need help.
-            </p>
-          </div>
+<div class="section-header">
+<h2 class="section-title">Apps from the lab</h2>
 
-          <aside class="about-card">
-            <h3>What to expect</h3>
-            <ul>
-              <li><strong>Small scope.</strong> Each app solves one concrete problem.</li>
-              <li><strong>Respectful privacy.</strong> No accounts, no dark patterns.</li>
-              <li><strong>Calm design.</strong> Clear information, minimal noise.</li>
-              <li><strong>Indie pace.</strong> Features ship when they are ready, not rushed.</li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
-  </main>
+<p>
+Every app starts with a simple question:
+<em>what problem can we solve with one clean, reliable tool?</em>
+</p>
+</div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Indie Apps Lab</span>
-      <span class="footer-links">
-        <a href="#about">About</a>
-        <a href="apps/noise/privacy.html">Privacy</a>
-        <a href="/support/">Support</a>
-      </span>
-    </div>
-  </footer>
+<div class="apps-grid">
+
+<!-- Luma Lux -->
+
+<article class="app-card">
+
+<div class="app-card-header">
+<span class="app-tag app-tag--live">Available on Google Play</span>
+<h3>Luma Lux · Light & Lux Meter</h3>
+</div>
+
+<p class="app-summary">
+Turn your phone into a clean, accurate ambient light meter.
+Measure illuminance in lux using the built-in light sensor.
+</p>
+
+<ul class="app-feature-list">
+<li>Real-time lux measurement</li>
+<li>Uses device light sensor</li>
+<li>Helpful for photography</li>
+<li>Great for plant lighting checks</li>
+</ul>
+
+<div class="app-links">
+
+<a
+href="https://play.google.com/store/apps/details?id=io.github.indieappslab.lumalux"
+class="btn small"
+target="_blank"
+rel="noopener"
+>
+View on Google Play
+</a>
+
+<a
+href="https://indieappslab.github.io/apps/lux/privacy.html"
+class="text-link"
+target="_blank"
+>
+Privacy Policy
+</a>
+
+<span class="dot-separator">•</span>
+
+<a href="/support/" class="text-link">Support</a>
+
+</div>
+
+</article>
+
+<!-- Calm dB -->
+
+<article class="app-card">
+
+<div class="app-card-header">
+<span class="app-tag app-tag--live">Available on Google Play</span>
+<h3>Calm dB · Sound Meter</h3>
+</div>
+
+<p class="app-summary">
+A clean, accurate sound level meter for real-time noise checks in decibels.
+</p>
+
+<ul class="app-feature-list">
+<li>Real-time sound level in dB</li>
+<li>Live chart</li>
+<li>Session history</li>
+<li>Export measurements</li>
+</ul>
+
+<div class="app-links">
+
+<a
+href="https://play.google.com/store/apps/details?id=io.github.indieappslab.calmdb"
+class="btn small"
+target="_blank"
+rel="noopener"
+>
+View on Google Play
+</a>
+
+<a
+href="https://indieappslab.github.io/apps/noise/privacy.html"
+class="text-link"
+target="_blank"
+>
+Privacy Policy
+</a>
+
+<span class="dot-separator">•</span>
+
+<a href="/support/" class="text-link">Support</a>
+
+</div>
+
+</article>
+
+<!-- Brelax -->
+
+<article class="app-card">
+
+<div class="app-card-header">
+<span class="app-tag app-tag--live">Available on Google Play</span>
+<h3>Brelax · Breathing Exercises</h3>
+</div>
+
+<p class="app-summary">
+A breathing app for calm, focus and better sleep with guided breathing sessions.
+</p>
+
+<ul class="app-feature-list">
+<li>Guided breathing sessions</li>
+<li>Helps with calm and focus</li>
+<li>Minimal relaxing visuals</li>
+<li>Designed for daily use</li>
+</ul>
+
+<div class="app-links">
+
+<a
+href="https://play.google.com/store/apps/details?id=io.github.indieappslab.brelax"
+class="btn small"
+target="_blank"
+rel="noopener"
+>
+View on Google Play
+</a>
+
+<a
+href="https://indieappslab.github.io/apps/brelax/privacy.html"
+class="text-link"
+target="_blank"
+>
+Privacy Policy
+</a>
+
+<span class="dot-separator">•</span>
+
+<a href="/support/" class="text-link">Support</a>
+
+</div>
+
+</article>
+
+<!-- Pomodoro -->
+
+<article class="app-card">
+
+<div class="app-card-header">
+<span class="app-tag">Closed testing</span>
+<h3>Pomodoro Timer · Study & Focus</h3>
+</div>
+
+<p class="app-summary">
+A minimal Pomodoro timer for deep work sessions and structured focus.
+</p>
+
+<ul class="app-feature-list">
+<li>Pomodoro sessions</li>
+<li>Focus statistics</li>
+<li>Minimal distraction-free UI</li>
+<li>Early access testing</li>
+</ul>
+
+<div class="app-links">
+
+<a
+href="https://play.google.com/apps/testing/io.github.indieappslab.pomodoro"
+class="btn small"
+target="_blank"
+rel="noopener"
+>
+Join closed testing
+</a>
+
+<a
+href="https://play.google.com/store/apps/details?id=io.github.indieappslab.pomodoro"
+class="text-link"
+target="_blank"
+>
+Store listing
+</a>
+
+<span class="dot-separator">•</span>
+
+<a
+href="https://indieappslab.github.io/apps/pomodoro/privacy.html"
+class="text-link"
+target="_blank"
+>
+Privacy Policy
+</a>
+
+<span class="dot-separator">•</span>
+
+<a href="/support/" class="text-link">Support</a>
+
+</div>
+
+</article>
+
+<!-- Habivo -->
+
+<article class="app-card">
+
+<div class="app-card-header">
+<span class="app-tag">Closed testing</span>
+<h3>Habivo · Daily Habit Tracker</h3>
+</div>
+
+<p class="app-summary">
+Build habits and routines with a clean habit tracker and simple streak system.
+</p>
+
+<ul class="app-feature-list">
+<li>Create daily habits</li>
+<li>Track streaks</li>
+<li>Simple statistics</li>
+<li>Fast daily check-ins</li>
+</ul>
+
+<div class="app-links">
+
+<a
+href="https://play.google.com/apps/testing/io.github.indieappslab.habits"
+class="btn small"
+target="_blank"
+rel="noopener"
+>
+Join closed testing
+</a>
+
+<a
+href="https://play.google.com/store/apps/details?id=io.github.indieappslab.habits"
+class="text-link"
+target="_blank"
+>
+Store listing
+</a>
+
+<span class="dot-separator">•</span>
+
+<a
+href="https://indieappslab.github.io/apps/habits/privacy.html"
+class="text-link"
+target="_blank"
+>
+Privacy Policy
+</a>
+
+<span class="dot-separator">•</span>
+
+<a href="/support/" class="text-link">Support</a>
+
+</div>
+
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="section section-muted">
+
+<div class="container">
+
+<div class="about-layout">
+
+<div class="about-main">
+
+<p class="eyebrow">Who is behind the apps</p>
+
+<h2 class="section-title">About Indie Apps Lab</h2>
+
+<p>
+Indie Apps Lab is a one-person studio experimenting with small,
+carefully designed tools.
+</p>
+
+<p>
+The goal is simple:
+<strong>apps that feel calm, honest and useful.</strong>
+</p>
+
+<p>
+Each app focuses on one clear job —
+measure something, help you focus, or build better routines.
+</p>
+
+</div>
+
+<aside class="about-card">
+
+<h3>What to expect</h3>
+
+<ul>
+<li><strong>Small scope.</strong> One clear problem.</li>
+<li><strong>Respectful privacy.</strong> No accounts.</li>
+<li><strong>Calm design.</strong> Minimal UI.</li>
+<li><strong>Indie pace.</strong> Features ship when ready.</li>
+</ul>
+
+</aside>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+<div class="container footer-inner">
+
+<span>© <span id="year"></span> Indie Apps Lab</span>
+
+<span class="footer-links">
+<a href="#about">About</a>
+<a href="/support/">Support</a>
+</span>
+
+</div>
+
+</footer>
+
 </body>
 </html>
