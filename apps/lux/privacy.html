@@ -6,7 +6,7 @@
   <title>Luma Lux – Privacy Policy</title>
   <meta
     name="description"
-    content="Privacy Policy for the Luma Lux light meter app by Indie Apps Lab. No account, no server-side collection of your measurements; light sensor readings are processed on-device. Google Firebase is used for crash reporting/diagnostics to improve stability."
+    content="Privacy Policy for the Luma Lux light meter app by Indie Apps Lab. No account, no server-side collection of your measurements; light sensor readings are processed on-device, and the camera may be used on-device as a fallback if needed. Google Firebase is used for crash reporting and diagnostics to improve stability."
   />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
@@ -35,7 +35,7 @@
       <div class="container narrow">
         <h1>Privacy Policy – Luma Lux</h1>
         <p class="muted">
-          Last updated: <strong>2026-01-10</strong>
+          Last updated: <strong>2026-03-12</strong>
         </p>
 
         <h2>1. Introduction</h2>
@@ -46,9 +46,11 @@
           “<strong>our</strong>”) handles your information.
         </p>
         <p>
-          Luma Lux is a light meter. It uses your device’s ambient light sensor to measure
-          illumination in lux (lx) and shows the result on screen. The App is designed
-          to be as privacy-friendly as possible and to minimise the data we process.
+          Luma Lux is a light meter. It primarily uses your device’s ambient light sensor
+          to measure illumination in lux (lx) and display the result on screen.
+          On some devices, if the light sensor is unavailable or does not provide readings,
+          the App may use the device camera to estimate light levels directly on the device.
+          The App is designed to be as privacy-friendly as possible and to minimise the data we process.
         </p>
         <p>
           This Privacy Policy applies to the Luma Lux mobile application and describes how it
@@ -63,6 +65,12 @@
           <li><strong>No accounts or sign-in.</strong> You can use the App without creating an account.</li>
           <li><strong>No server collection of your measurements.</strong> We do not send your light measurements or measurement history to our servers.</li>
           <li><strong>On-device processing.</strong> Light sensor readings are processed on your device to calculate and display lux values.</li>
+          <li>
+            <strong>Camera used only as a fallback.</strong>
+            On some devices, the App may use the device camera to estimate light levels
+            when the ambient light sensor is unavailable or not responding. Images and videos
+            are not stored or transmitted.
+          </li>
           <li><strong>No ads.</strong> The App does not include advertising networks.</li>
           <li>
             <strong>Limited diagnostics via Google Firebase.</strong> The App uses Firebase to help us understand crashes and improve stability.
@@ -91,7 +99,28 @@
           </li>
         </ul>
 
-        <h3>3.2 Measurement History (Local Storage)</h3>
+        <h3>3.2 Camera-Based Light Estimation (Fallback)</h3>
+        <ul class="app-feature-list">
+          <li>
+            On certain devices where the ambient light sensor is not available
+            or does not provide readings, the App may use the device camera
+            to estimate the current light level.
+          </li>
+          <li>
+            Camera data is processed <strong>only on your device</strong>
+            to estimate brightness levels.
+          </li>
+          <li>
+            The App does <strong>not</strong> capture or store photos or videos
+            when using the camera for this purpose.
+          </li>
+          <li>
+            Camera frames are used only temporarily to calculate brightness
+            and are immediately discarded.
+          </li>
+        </ul>
+
+        <h3>3.3 Measurement History (Local Storage)</h3>
         <ul class="app-feature-list">
           <li>
             Luma Lux may store a history of your measurement sessions (for example:
@@ -107,7 +136,7 @@
           </li>
         </ul>
 
-        <h3>3.3 App Settings and Configuration</h3>
+        <h3>3.4 App Settings and Configuration</h3>
         <ul class="app-feature-list">
           <li>
             The App stores certain preferences (for example: theme, language, calibration
@@ -119,7 +148,7 @@
           </li>
         </ul>
 
-        <h3>3.4 Personal Data</h3>
+        <h3>3.5 Personal Data</h3>
         <p>
           Luma Lux does <strong>not</strong> require you to create an account, sign in, or provide
           your name, email address or other personal details in order to use the App.
@@ -159,6 +188,11 @@
             <strong>Light sensor</strong> – used to measure illumination in real time.
             On most Android devices, access to the ambient light sensor does not require a runtime permission prompt.
           </li>
+          <li>
+            <strong>Camera (optional fallback)</strong> – may be used on some devices
+            to estimate light levels when the ambient light sensor is unavailable or does not provide readings.
+            The App does not store images or videos.
+          </li>
         </ul>
         <p>
           The App uses the platform’s standard storage mechanisms for saving local data
@@ -173,6 +207,9 @@
         <ul class="app-feature-list">
           <li>
             All processing of sensor readings for measurement is done directly on your device.
+          </li>
+          <li>
+            When camera fallback is used, camera frames are also processed only on your device.
           </li>
           <li>
             Measurement history and settings are stored only in the App’s local storage
@@ -197,7 +234,7 @@
             Firebase is a third-party service operated by Google and is subject to its own privacy documentation and terms.
           </li>
           <li>
-            Your measurement history and light sensor readings are intended to remain on-device and are not designed to be uploaded to our servers.
+            Your measurement history, light sensor readings, and temporary camera-based light estimation are intended to remain on-device and are not designed to be uploaded to our servers.
           </li>
         </ul>
 
@@ -217,8 +254,8 @@
         <ul class="app-feature-list">
           <li>We do not sell or rent your personal data.</li>
           <li>
-            We do not share your measurement history or light sensor readings with third parties,
-            as this data is not sent to us in the first place.
+            We do not share your measurement history, light sensor readings, or camera-based
+            light estimation data with third parties, as this data is not sent to us in the first place.
           </li>
           <li>
             We may disclose information only if required to do so by applicable law or
