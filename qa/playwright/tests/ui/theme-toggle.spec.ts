@@ -2,13 +2,13 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Theme toggle', () => {
     test('theme toggle is visible', async ({ page }) => {
-        await page.goto('/');
+        await page.goto('https://indieappslab.github.io/');
 
         await expect(page.locator('#theme-toggle')).toBeVisible();
     });
 
     test('theme changes after click', async ({ page }) => {
-        await page.goto('/');
+        await page.goto('https://indieappslab.github.io/');
 
         const html = page.locator('html');
         const toggle = page.locator('#theme-toggle');
