@@ -9,7 +9,7 @@ test.describe('Apps section smoke', () => {
         await expect(page.getByRole('heading', { name: /^Brelax$/i })).toBeVisible();
         await expect(page.getByRole('heading', { name: /^Pomodoro Timer$/i })).toBeVisible();
         await expect(page.getByRole('heading', { name: /^Habivo$/i })).toBeVisible();
-        await expect(page.getByRole('heading', { name: /^Photo Journal$/i })).toBeVisible();
+        await expect(page.getByRole('heading', { name: /^OneSnap$/i })).toBeVisible();
         await expect(page.getByRole('heading', { name: /^Expiree$/i })).toBeVisible();
         await expect(page.getByRole('heading', { name: /^Pickly$/i })).toBeVisible();
     });
