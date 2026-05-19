@@ -1248,13 +1248,13 @@ main {
 
 .qr-card {
   width: fit-content;
-  margin-top: 16px;
+  margin-top: 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 13px 10px 10px;
+  gap: 10px;
+  padding: 8px 11px 8px 8px;
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 14px;
   background: color-mix(in srgb, var(--surface-solid) 64%, transparent);
   box-shadow: 0 10px 26px rgba(47, 43, 34, 0.07);
   color: inherit;
@@ -1275,8 +1275,8 @@ main {
 }
 
 .qr-card img {
-  width: 160px;
-  height: 160px;
+  width: 112px;
+  height: 112px;
   display: block;
   background: #fff;
   image-rendering: pixelated;
@@ -1284,7 +1284,7 @@ main {
 }
 
 .qr-card span {
-  max-width: 80px;
+  max-width: 68px;
   color: var(--text-muted);
   font-size: 10px;
   font-weight: 780;
