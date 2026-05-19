@@ -12,7 +12,7 @@ test.describe('Home page smoke', () => {
         await page.goto('/');
 
         await expect(
-            page.getByRole('heading', { name: /quietly powerful mobile tools for focused daily life/i })
+            page.getByRole('heading', { name: /intentional apps for modern daily life/i })
         ).toBeVisible();
 
         await expect(page.getByRole('link', { name: /explore apps/i })).toBeVisible();
