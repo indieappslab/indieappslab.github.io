@@ -8,7 +8,7 @@ test.describe('Main navigation', () => {
 
             await expect(topNav.getByRole('link', { name: /^apps$/i })).toBeVisible();
             await expect(topNav.getByRole('link', { name: /^studio$/i })).toBeVisible();
-            await expect(topNav.getByRole('link', { name: /^support$/i })).toBeVisible();
+            await expect(topNav.getByRole('link', { name: /^contact$/i })).toBeVisible();
         });
 
     test('explore apps anchor works', async ({ page }) => {
