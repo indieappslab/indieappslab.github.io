@@ -12,6 +12,6 @@ test.describe('Contact smoke', () => {
     test('old support route still serves the contact page', async ({ page }) => {
         await page.goto('/support/');
 
-        await expect(page.getByRole('heading', { name: /^contact & collaboration$/i })).toBeVisible();
+        await expect(page.getByRole('heading', { name: /^collaboration & support$/i })).toBeVisible();
     });
 });
