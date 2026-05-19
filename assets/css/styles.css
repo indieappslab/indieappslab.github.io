@@ -936,6 +936,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   background:
     linear-gradient(120deg, rgba(255, 255, 255, 0.48), transparent 34%),
     linear-gradient(300deg, rgba(255, 255, 255, 0.18), transparent 42%);
@@ -1274,8 +1275,8 @@ main {
 }
 
 .qr-card img {
-  width: 144px;
-  height: 144px;
+  width: 160px;
+  height: 160px;
   display: block;
   background: #fff;
   image-rendering: pixelated;
