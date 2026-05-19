@@ -1,11 +1,17 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Support smoke', () => {
-    test('support link is visible and has href', async ({ page }) => {
-        await page.goto('https://indieappslab.github.io/');
+test.describe('Contact smoke', () => {
+    test('contact link is visible and has href', async ({ page }) => {
+        await page.goto('/');
 
-        const supportLink = page.getByRole('link', { name: /^support$/i }).first();
-        await expect(supportLink).toBeVisible();
-        await expect(supportLink).toHaveAttribute('href', /support/i);
+        const contactLink = page.getByRole('link', { name: /^contact$/i }).first();
+        await expect(contactLink).toBeVisible();
+        await expect(contactLink).toHaveAttribute('href', /contact/i);
+    });
+
+    test('old support route still serves the contact page', async ({ page }) => {
+        await page.goto('/support/');
+
+        await expect(page.getByRole('heading', { name: /^contact & collaboration$/i })).toBeVisible();
     });
 });

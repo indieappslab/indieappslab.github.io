@@ -1,5 +1,6 @@
 (function () {
   const html = document.documentElement;
+
   const toggleBtn = document.getElementById("theme-toggle");
   const THEME_KEY = "indieappslab-theme";
 
@@ -18,6 +19,11 @@
       : "light";
   }
 
+  function getActiveTheme() {
+    const current = html.getAttribute("data-theme");
+    return current === "light" || current === "dark" ? current : getSystemPref();
+  }
+
   // Init theme from localStorage or system
   const saved = localStorage.getItem(THEME_KEY);
   if (saved === "light" || saved === "dark") {
@@ -28,24 +34,9 @@
 
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
-      const current = html.getAttribute("data-theme") || "auto";
-
-      let next;
-      if (current === "auto") {
-        // lock to opposite of system
-        next = getSystemPref() === "dark" ? "light" : "dark";
-      } else if (current === "light") {
-        next = "dark";
-      } else if (current === "dark") {
-        next = "auto";
-      }
-
+      const next = getActiveTheme() === "dark" ? "light" : "dark";
       applyTheme(next);
-      if (next === "auto") {
-        localStorage.removeItem(THEME_KEY);
-      } else {
-        localStorage.setItem(THEME_KEY, next);
-      }
+      localStorage.setItem(THEME_KEY, next);
     });
   }
 
@@ -53,5 +44,40 @@
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear().toString();
+  }
+
+  // Reveal app tiles and supporting panels as they enter the viewport.
+  const revealItems = document.querySelectorAll(".app-slide, .reveal-panel");
+  if (revealItems.length) {
+    html.classList.add("supports-scroll-reveal");
+    revealItems.forEach((item) => item.classList.add("is-reveal-pending"));
+
+    if (!("IntersectionObserver" in window)) {
+      revealItems.forEach((item) => {
+        item.classList.add("is-visible");
+        item.classList.remove("is-reveal-pending");
+      });
+      return;
+    }
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add("is-visible");
+          entry.target.classList.remove("is-reveal-pending");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        rootMargin: "0px 0px -12% 0px",
+        threshold: 0.18,
+      }
+    );
+
+    revealItems.forEach((item) => revealObserver.observe(item));
   }
 })();
