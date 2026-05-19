@@ -144,7 +144,7 @@ main {
 }
 
 .brand-text {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 750;
   letter-spacing: 0;
 }
@@ -230,6 +230,10 @@ main {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  font-size: 15px;
 }
 
 .hero h1 {
@@ -980,7 +984,7 @@ main {
 }
 
 .section-studio .eyebrow {
-  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  font-size: 15px;
 }
 
 .studio-panel {
