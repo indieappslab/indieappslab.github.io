@@ -412,16 +412,31 @@ main {
   line-height: 1.65;
 }
 
+.legal-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, transparent 62%, color-mix(in srgb, var(--bg) 84%, transparent) 100%),
+    linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, transparent), transparent 30%),
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 30%),
+    radial-gradient(circle at 16% 8%, rgba(79, 199, 185, 0.07), transparent 34%),
+    radial-gradient(circle at 88% 14%, rgba(52, 120, 165, 0.06), transparent 31%),
+    radial-gradient(circle at 74% 78%, rgba(181, 130, 45, 0.03), transparent 28%),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-solid) 20%, transparent), transparent 52%);
+}
+
 .contact-page {
   position: relative;
   overflow: hidden;
   padding-top: 42px;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 28%),
-    radial-gradient(circle at 18% 8%, rgba(79, 199, 185, 0.18), transparent 32%),
-    radial-gradient(circle at 86% 12%, rgba(52, 120, 165, 0.18), transparent 29%),
-    radial-gradient(circle at 72% 76%, rgba(181, 130, 45, 0.12), transparent 34%),
-    linear-gradient(180deg, color-mix(in srgb, var(--surface-solid) 32%, transparent), transparent 48%);
+    linear-gradient(180deg, transparent 62%, color-mix(in srgb, var(--bg) 82%, transparent) 100%),
+    linear-gradient(180deg, color-mix(in srgb, var(--bg) 72%, transparent), transparent 30%),
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 30%),
+    radial-gradient(circle at 18% 8%, rgba(79, 199, 185, 0.08), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(52, 120, 165, 0.07), transparent 31%),
+    radial-gradient(circle at 72% 76%, rgba(181, 130, 45, 0.03), transparent 28%),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-solid) 20%, transparent), transparent 52%);
 }
 
 .contact-hero {
@@ -751,7 +766,7 @@ main {
     box-shadow var(--transition);
 }
 
-.supports-scroll-reveal .app-slide {
+.supports-scroll-reveal .is-reveal-pending {
   opacity: 0;
   filter: blur(12px);
   transform: translate3d(var(--reveal-x), 42px, 0) rotateX(7deg) scale(0.96);
@@ -766,7 +781,9 @@ main {
   will-change: opacity, filter, transform;
 }
 
-.supports-scroll-reveal .app-slide.is-visible {
+.supports-scroll-reveal .is-reveal-pending.is-visible,
+.supports-scroll-reveal .app-slide.is-visible,
+.supports-scroll-reveal .reveal-panel.is-visible {
   opacity: 1;
   filter: blur(0);
   transform: translate3d(0, 0, 0) rotateX(0) scale(1);
@@ -1279,6 +1296,8 @@ main {
 }
 
 .studio-panel {
+  --reveal-x: -34px;
+  --reveal-delay: 0ms;
   padding: 34px;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -1538,7 +1557,7 @@ main {
     padding: 2px 0 0;
   }
 
-  .supports-scroll-reveal .app-slide {
+  .supports-scroll-reveal .is-reveal-pending {
     transform: translate3d(0, 34px, 0) scale(0.96);
     transition-delay: 0ms;
   }
@@ -1628,7 +1647,9 @@ main {
 @media (prefers-reduced-motion: reduce) {
   .app-slide,
   .app-slide.is-visible,
-  .app-slide:hover {
+  .app-slide:hover,
+  .reveal-panel,
+  .reveal-panel.is-visible {
     opacity: 1;
     filter: none;
     transform: none;

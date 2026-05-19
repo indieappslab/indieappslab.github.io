@@ -1,6 +1,5 @@
 (function () {
   const html = document.documentElement;
-  html.classList.add("supports-scroll-reveal");
 
   const toggleBtn = document.getElementById("theme-toggle");
   const THEME_KEY = "indieappslab-theme";
@@ -47,11 +46,17 @@
     yearSpan.textContent = new Date().getFullYear().toString();
   }
 
-  // Reveal app tiles as they enter the viewport.
-  const appTiles = document.querySelectorAll(".app-slide");
-  if (appTiles.length) {
+  // Reveal app tiles and supporting panels as they enter the viewport.
+  const revealItems = document.querySelectorAll(".app-slide, .reveal-panel");
+  if (revealItems.length) {
+    html.classList.add("supports-scroll-reveal");
+    revealItems.forEach((item) => item.classList.add("is-reveal-pending"));
+
     if (!("IntersectionObserver" in window)) {
-      appTiles.forEach((tile) => tile.classList.add("is-visible"));
+      revealItems.forEach((item) => {
+        item.classList.add("is-visible");
+        item.classList.remove("is-reveal-pending");
+      });
       return;
     }
 
@@ -63,6 +68,7 @@
           }
 
           entry.target.classList.add("is-visible");
+          entry.target.classList.remove("is-reveal-pending");
           observer.unobserve(entry.target);
         });
       },
@@ -72,6 +78,6 @@
       }
     );
 
-    appTiles.forEach((tile) => revealObserver.observe(tile));
+    revealItems.forEach((item) => revealObserver.observe(item));
   }
 })();
