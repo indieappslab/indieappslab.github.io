@@ -46,11 +46,25 @@
     yearSpan.textContent = new Date().getFullYear().toString();
   }
 
+  function isInInitialViewport(item) {
+    const rect = item.getBoundingClientRect();
+    const viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+
+    return rect.top < viewportHeight && rect.bottom > 0;
+  }
+
   // Reveal app tiles and supporting panels as they enter the viewport.
   const revealItems = document.querySelectorAll(".app-slide, .reveal-panel");
   if (revealItems.length) {
     html.classList.add("supports-scroll-reveal");
-    revealItems.forEach((item) => item.classList.add("is-reveal-pending"));
+    revealItems.forEach((item) => {
+      if (isInInitialViewport(item)) {
+        item.classList.add("is-visible");
+      } else {
+        item.classList.add("is-reveal-pending");
+      }
+    });
 
     if (!("IntersectionObserver" in window)) {
       revealItems.forEach((item) => {
@@ -78,6 +92,10 @@
       }
     );
 
-    revealItems.forEach((item) => revealObserver.observe(item));
+    revealItems.forEach((item) => {
+      if (!item.classList.contains("is-visible")) {
+        revealObserver.observe(item);
+      }
+    });
   }
 })();

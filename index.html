@@ -10,8 +10,14 @@
     content="Indie Apps Lab creates focused mobile apps for measuring, breathing, focus, and daily routines: Luma Lux, Calm dB, Brelax, Pomodoro Timer, and Habivo."
   />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260519-immersive-hero" />
-  <script defer src="assets/js/main.js"></script>
+  <script>
+    try {
+      const theme = localStorage.getItem("indieappslab-theme");
+      document.documentElement.dataset.theme = theme === "light" || theme === "dark" ? theme : "auto";
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260520-no-jump-4" />
+  <script defer src="assets/js/main.js?v=20260520-no-jump-4"></script>
 </head>
 <body>
 <header class="site-header">

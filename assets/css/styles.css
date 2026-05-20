@@ -20,7 +20,7 @@
   --radius-md: 18px;
   --radius-lg: 28px;
   --transition: 180ms ease;
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
 }
 
 html[data-theme="dark"] {
@@ -68,7 +68,6 @@ html[data-theme="dark"] {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 112px;
-  scroll-snap-type: y proximity;
 }
 
 html,
@@ -88,7 +87,6 @@ body {
   flex-direction: column;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
 }
 
 a {
@@ -758,8 +756,6 @@ main {
   overflow: hidden;
   position: relative;
   scroll-margin-top: 112px;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
   transition:
     transform var(--transition),
     border-color var(--transition),
@@ -768,25 +764,18 @@ main {
 
 .supports-scroll-reveal .is-reveal-pending {
   opacity: 0;
-  filter: blur(12px);
-  transform: translate3d(var(--reveal-x), 42px, 0) rotateX(7deg) scale(0.96);
-  transform-origin: 50% 100%;
   transition:
     opacity 620ms cubic-bezier(0.22, 1, 0.36, 1),
-    filter 720ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 620ms cubic-bezier(0.22, 1, 0.36, 1),
     border-color var(--transition),
     box-shadow var(--transition);
   transition-delay: var(--reveal-delay);
-  will-change: opacity, filter, transform;
+  will-change: opacity;
 }
 
 .supports-scroll-reveal .is-reveal-pending.is-visible,
 .supports-scroll-reveal .app-slide.is-visible,
 .supports-scroll-reveal .reveal-panel.is-visible {
   opacity: 1;
-  filter: blur(0);
-  transform: translate3d(0, 0, 0) rotateX(0) scale(1);
 }
 
 .app-slide:hover {
@@ -1575,7 +1564,6 @@ main {
   }
 
   .supports-scroll-reveal .is-reveal-pending {
-    transform: translate3d(0, 34px, 0) scale(0.96);
     transition-delay: 0ms;
   }
 }
