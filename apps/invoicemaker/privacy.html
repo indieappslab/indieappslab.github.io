@@ -31,11 +31,11 @@
     <section class="section legal-page">
       <div class="container narrow">
         <h1>Privacy Policy – Invoice Maker</h1>
-        <p class="muted">Last updated: <strong>2026-10-30</strong></p>
+        <p class="muted">Last updated: <strong>2026-11-20</strong></p>
 
         <h2>1. Introduction</h2>
         <p>This Privacy Policy explains how the <strong>Invoice Maker</strong> mobile application ("<strong>Invoice Maker</strong>", "<strong>the App</strong>") developed by <strong>Indie Apps Lab</strong> ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") handles information.</p>
-        <p>Invoice Maker lets you create, manage, preview, export and share invoices and estimates, organize clients and products or services, and maintain business details.</p>
+        <p>Invoice Maker lets you create and manage invoices, estimates and credit notes; record payments; schedule recurring invoice drafts; organize clients and products or services; add business details and a logo; and export PDF documents and CSV reports.</p>
         <p>Privacy is a core principle of the App. Business information and document contents are stored <strong>locally on your device</strong>. We do not operate a cloud service that stores or synchronizes your invoice or client database. The App does not automatically transmit invoice or client records to us. If you choose to export, share or print a document, other apps or services you select may handle it.</p>
 
         <h2>2. Key Points at a Glance</h2>
@@ -43,8 +43,8 @@
           <li><strong>No accounts.</strong> No registration or developer-operated sign-in is required.</li>
           <li><strong>No analytics or tracking.</strong> The App does not include advertising, behavioral analytics or tracking SDKs.</li>
           <li><strong>No ads or subscriptions.</strong> This version does not include advertising, in-app purchases or paid subscriptions.</li>
-          <li><strong>Local storage.</strong> Invoices, estimates, client records and business details are stored in the App's local database.</li>
-          <li><strong>No developer cloud sync.</strong> We do not automatically upload or synchronize your documents or client database to our servers. Android operating-system backups may be available according to your device settings.</li>
+          <li><strong>Local storage.</strong> Documents, payment records, client and business details, logos, recurring schedules and editing recoveries are stored in the App's private local database.</li>
+          <li><strong>No developer cloud sync.</strong> We do not automatically upload or synchronize your documents or client database to our servers. The App disables Android automatic backup and requests exclusion of app data from operating-system cloud backup and device transfers. Use the App's explicit encrypted backup export to move saved data.</li>
           <li><strong>Offline documents and fonts.</strong> Invoice and estimate creation, editing and PDF generation use local resources, including fonts packaged with the App.</li>
           <li><strong>Exports are your choice.</strong> You decide when to save, share, print or back up your information.</li>
         </ul>
@@ -52,34 +52,35 @@
         <h2>3. Data Stored by the App</h2>
         <h3>3.1 Business Profile (Local Storage)</h3>
         <ul class="app-feature-list">
-          <li>You may enter a business name, address, email, phone number, website, tax identification number and bank or payment details.</li>
+          <li>You may enter a business name, address, email, phone number, website, tax identification number and bank or payment details. You may select a PNG or JPEG logo through the system file picker. The logo is resized locally and saved as PNG without source image metadata; documents retain their own copy.</li>
           <li>These details are stored locally and may appear in documents you create.</li>
           <li>We do <strong>not</strong> automatically upload this information to our servers.</li>
         </ul>
-        <h3>3.2 Clients, Invoices &amp; Estimates (Local Storage)</h3>
+        <h3>3.2 Clients, Documents, Payments &amp; Recurring Schedules (Local Storage)</h3>
         <ul class="app-feature-list">
           <li>Client records may contain names, contact details, addresses and tax identification numbers.</li>
-          <li>Documents may contain numbers, dates, descriptions, quantities, prices, currencies, taxes, discounts, payment details, notes and statuses.</li>
+          <li>Documents may contain numbers, dates, descriptions, quantities, prices, currencies, taxes, discounts, payment dates, amounts, methods and references, notes, statuses and credit-note relationships. Recurring schedules retain an invoice template and schedule dates. Unfinished edits may be saved locally for recovery after interruption.</li>
           <li>These records are saved in the App's private local database, not on our servers.</li>
           <li>Some of this content is personal data. You are responsible for having an appropriate basis to record and share client information.</li>
         </ul>
         <h3>3.3 Products, Services &amp; App Settings</h3>
         <ul class="app-feature-list">
           <li>Product and service names, descriptions, units and prices are stored locally.</li>
-          <li>Language, currency and appearance preferences are stored locally on your device.</li>
+          <li>Language, currency, appearance, document defaults and numbering preferences are stored locally. Optional notification settings, reminder delivery/snooze state and in-app review prompt timing are device-local; they are excluded from manual backups.</li>
         </ul>
         <h3>3.4 Information We Receive</h3>
-        <p>We do not receive your invoice or client database through normal use of the App. If you contact us by email, we receive your email address and any information or files you choose to include in your message. Email providers may process that correspondence according to their own privacy policies.</p>
+        <p>We do not receive your invoice or client database through normal use of the App. If you contact us by email, we receive your email address and any information or files you choose to include in your message. The support email draft may include the app version/build, device locale, Android version and device model. You can review or edit the draft before sending it in your email app. Email providers may process that correspondence according to their own privacy policies.</p>
 
-        <h2>4. PDF Exports, Sharing &amp; Backups</h2>
+        <h2>4. PDF and CSV Exports, Sharing &amp; Backups</h2>
         <ul class="app-feature-list">
           <li><strong>PDF documents:</strong> You can generate and preview invoices and estimates using fonts bundled with the App. PDF generation does not require downloading fonts from the internet.</li>
           <li><strong>Saving and sharing:</strong> You may save, print or share PDFs using Android's file picker, sharing features, supported printing services or other apps you choose.</li>
           <li><strong>Third-party destinations:</strong> If you send a document through email, messaging, a cloud-storage provider or a printing service, that recipient or service may process its contents under its own privacy terms.</li>
-          <li><strong>Backups:</strong> You can manually export and restore app data as JSON files using the device's file picker.</li>
-          <li><strong>Important:</strong> Exported JSON backup files are <strong>not encrypted</strong> by the App. They may contain client contact details, business information, tax identifiers and bank details. Store them securely and share them only with trusted recipients.</li>
-          <li><strong>Android system backups:</strong> Depending on your device configuration, Android or your device provider may back up app data separately from the App's manual export feature. These backups are controlled by your device and operating-system settings, not by Indie Apps Lab.</li>
-          <li>We do not automatically upload exported PDFs or manual backup files to our servers. Copies saved or shared outside the App must be managed separately.</li>
+          <li><strong>CSV reports:</strong> You can export saved document summaries, line items, payments, clients or catalog items through the system file picker. CSV reports and PDF documents are not password-encrypted by the App and may contain personal or financial information.</li>
+          <li><strong>Encrypted backups:</strong> New manual backup exports, including safety copies before a restore, require a password. The JSON file contains password-encrypted data protected with AES-256-GCM and PBKDF2-HMAC-SHA256. Backups include saved documents, payments, credit notes, business/client/catalog information, logos, recurring schedules and supported preferences. Unfinished editing recoveries are excluded.</li>
+          <li><strong>Password and legacy files:</strong> Backup passwords are not saved and cannot be recovered by us. Keep the password separately from the backup. The App can still import older unencrypted JSON backups; those legacy files remain unencrypted. Protect all exported copies and share them only with trusted recipients.</li>
+          <li><strong>Android system backups:</strong> The App disables Android Auto Backup and includes cloud-backup and device-transfer exclusions. Device manufacturers may implement operating-system behavior differently; we do not operate a separate automatic backup service.</li>
+          <li>We do not automatically upload exported PDFs, CSV reports or manual backup files to our servers. Copies saved or shared outside the App must be managed separately.</li>
         </ul>
 
         <h2>5. Device Permissions and External Apps</h2>
@@ -89,6 +90,7 @@
           <li><strong>Files:</strong> Android's file picker and share or print interfaces let you choose which files to import, save or share. The App does not require unrestricted access to your device's storage.</li>
           <li><strong>Camera, microphone and location:</strong> The App does not require access to these device features.</li>
           <li><strong>Contacts:</strong> The App does not read your device's address book. Client details are entered manually.</li>
+          <li><strong>Optional payment reminders:</strong> Enabling reminders may request Android notification permission. Reminders are scheduled locally; they do not use a server or exact-alarm permission. Local scheduling state contains unpaid invoice IDs, document numbers and due dates. Notifications identify documents and use private lock-screen visibility; client names, amounts and bank details are not copied into notification scheduling state. Android reboot and clock-change events allow local reminders to be rescheduled.</li>
         </ul>
 
         <h2>6. Third-Party Services</h2>
@@ -98,6 +100,9 @@
         <p>PDF fonts are bundled with the App and loaded from its installed assets. The App does <strong>not</strong> download PDF fonts from Google Fonts or other online font providers when you create documents.</p>
         <h3>6.3 Services You Choose to Open</h3>
         <p>If you open our Privacy Policy or support link, or use another app to share, save or print a document, your browser, email provider, cloud-storage provider or printing service may process information under its own privacy policy. We do not control those external services.</p>
+
+        <h3>6.4 Google Play Ratings and Reviews</h3>
+        <p>The App may offer the Google Play in-app review dialog after use. Submitting a rating or review is optional. If you submit one, Google Play processes the rating and review text under its own terms; reviews may be public, or shared privately with the developer in a closed test. You can manage or delete reviews through Google Play or your Google Account. Invoice and client database contents are not supplied to this review flow. See <a href="https://developer.android.com/guide/playcore/in-app-review#data-safety">Google's in-app review data safety information</a>.</p>
 
         <h2>7. Data Sharing</h2>
         <ul class="app-feature-list">
@@ -111,9 +116,9 @@
 
         <h2>8. Data Retention and Deletion</h2>
         <ul class="app-feature-list">
-          <li>Local data remains on your device until you remove it using available features, clear the App's storage or uninstall the App, subject to Android's backup and restore behavior.</li>
+          <li>Local data remains on your device until you remove it using available features, clear the App's storage or uninstall the App. The App disables Android automatic backup and transfer; manually exported copies remain under your control.</li>
           <li>You may edit business and client information. Some issued documents cannot be deleted individually within the App; clearing the App's storage removes the local database.</li>
-          <li>PDFs and JSON backups exported outside the App are <strong>not</strong> automatically deleted when you uninstall the App. Remove copies separately from your device, any cloud storage or recipients.</li>
+          <li>PDFs, CSV reports and JSON backups exported outside the App are <strong>not</strong> automatically deleted when you uninstall the App. Remove copies separately from your device, any cloud storage or recipients.</li>
           <li>If you contact support, we may retain the correspondence as needed to respond to your request, manage support inquiries or meet applicable legal requirements. You may contact us to request deletion of information we hold, subject to applicable law.</li>
         </ul>
 
@@ -124,7 +129,7 @@
         <p>Depending on your location and applicable law, including the GDPR where relevant, you may have data protection rights.</p>
         <ul class="app-feature-list">
           <li><strong>Access and correction:</strong> Review and update the information stored locally in the App.</li>
-          <li><strong>Deletion:</strong> Delete supported records, clear App storage or uninstall the App. Remove exported files and operating-system backups separately where applicable.</li>
+          <li><strong>Deletion:</strong> Delete supported records, clear App storage or uninstall the App. Remove exported files and any older copies held by other services separately where applicable.</li>
           <li><strong>Control:</strong> Choose if, when and where to export, print, share or manually back up your documents.</li>
           <li><strong>Support inquiries:</strong> Contact us to ask about, correct or request deletion of any personal information we may hold through support correspondence, subject to applicable law.</li>
         </ul>
